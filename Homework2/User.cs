@@ -33,7 +33,7 @@ namespace Homework2
             }
             else
             {
-                Console.WriteLine("Enter Valid Username");
+                Console.WriteLine("Yeniden Daxil Edin");
                 UsernameL();
             }
         }
