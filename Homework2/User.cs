@@ -33,7 +33,7 @@ namespace Homework2
             }
             else
             {
-                Console.WriteLine("Yeniden Daxil Edin");
+                Console.WriteLine("Error! Usename 6 herfli olmalidir!");
                 UsernameL();
             }
         }
@@ -43,26 +43,14 @@ namespace Homework2
             string pass = Console.ReadLine();
             Password = pass;
 
-            char[] chars = pass.ToCharArray();
-            string ust = pass.ToUpper();
-            char[] karakter = ust.ToCharArray();
-            int count = 0;
-
-            for (int i = 0; i < chars.Length; i++)
+            if (pass == pass.ToLower())
             {
-                if (chars[i] == karakter[i])
-                {
-                    count++;
-                }
-            }
-            if (count > 0)
-            {
-                _password = pass;
+                Console.WriteLine("Set again Password");
+                Passwword();
             }
             else
             {
-                Console.WriteLine("Yeniden daxil edin");
-                Passwword();
+                _password = pass;
             }
         }
 
